@@ -10,6 +10,7 @@ from verto.processors.ImageContainerBlockProcessor import ImageContainerBlockPro
 from verto.processors.InteractiveTagBlockProcessor import InteractiveTagBlockProcessor
 from verto.processors.InteractiveContainerBlockProcessor import InteractiveContainerBlockProcessor
 from verto.processors.RelativeLinkPattern import RelativeLinkPattern
+from verto.processors.ExternalLinkPattern import ExternalLinkPattern
 from verto.processors.RemoveTitlePreprocessor import RemoveTitlePreprocessor
 from verto.processors.SaveTitlePreprocessor import SaveTitlePreprocessor
 from verto.processors.GlossaryLinkPattern import GlossaryLinkPattern
@@ -192,6 +193,7 @@ class VertoExtension(Extension):
         ]
         self.inlinepatterns = [  # A special treeprocessor
             ['relative-link', RelativeLinkPattern(self, md), '_begin'],
+            ['external-link', ExternalLinkPattern(self, md), '_begin'],
             ['glossary-link', GlossaryLinkPattern(self, md), '_begin'],
             ['image-inline', ImageInlinePattern(self, md), '_begin']
         ]

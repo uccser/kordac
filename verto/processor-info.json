@@ -519,5 +519,9 @@
             "argument": "title"
           }
         }
+    },
+    "external-link": {
+      "class": "custom",
+      "pattern": "\\[(?P<link_text>[^\\]]+)\\]\\((?=(https?|ftps?|mailto|news):)(?P<link_url>[^\\?\\)]+)(?P<link_query>\\?[^\\)]*)?\\)"
     }
 }

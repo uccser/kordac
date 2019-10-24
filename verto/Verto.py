@@ -7,6 +7,7 @@ DEFAULT_PROCESSORS = frozenset({
     'button-link',
     'comment',
     'conditional',
+    'external-link',
     'glossary-link',
     'style',
     'heading',

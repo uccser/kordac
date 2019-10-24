@@ -19,6 +19,7 @@ from verto.tests.InteractiveTagTest import InteractiveTagTest
 from verto.tests.InteractiveContainerTest import InteractiveContainerTest
 from verto.tests.PanelTest import PanelTest
 from verto.tests.RelativeLinkTest import RelativeLinkTest
+from verto.tests.ExternalLinkTest import ExternalLinkTest
 from verto.tests.RemoveTest import RemoveTest
 from verto.tests.RemoveTitleTest import RemoveTitleTest
 from verto.tests.SaveTitleTest import SaveTitleTest
@@ -107,6 +108,7 @@ def unit_suite():
         unittest.makeSuite(ScratchInlineTest),
         unittest.makeSuite(StyleTest),
         unittest.makeSuite(RelativeLinkTest),
+        unittest.makeSuite(ExternalLinkTest),
         unittest.makeSuite(RemoveTest),
         unittest.makeSuite(RemoveTitleTest),
         unittest.makeSuite(TableOfContentsTest),
